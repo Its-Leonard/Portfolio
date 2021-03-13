@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio - Leonard</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Exo:300,700');
+
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body{
+                font-family: 'Exo', sans-serif;
+                background-image: url('https://wallpapercave.com/wp/wp2757874.gif');
+                background-color: #161A1C;
+            }
+
+
+
+            .navbar{
+                color: #fff;
+                background-color: transparent !important;
+                margin-top: 15px;
+                font-weight: 600;
+            }
+
+            .nav-link{
+                color: #fff !important;
+                font-weight: 600;
+            }
+            .nav-link:hover{
+                color: rgb(100, 100, 100) !important;
+            }
+            .nav-link:active{
+                color: rgb(40, 40, 40) !important;
+            }
+
+            .logo img{
+                width: 50px;
+                border-radius: 5px;
+            }
+
+            .title-ul{
+                list-style: none;
+            }
+
+            .title-ul li{
+                padding: 5px 0px;
+            }
+
+            .navbar-top-line{
+                background: #fff;
+                width: 100px;
+                height: 1px;
+            }
+
+            .navbar-bottom-line{
+                background: #fff;
+                width: 50%;
+                height: 1px;
+            }
+
+            .wrapper{
+                margin-top: 20%;
+                margin-left: 20%;
+            }
+
+            .title{
+                margin: auto;
+                width: 95%;
+                font-size: 50px;
+                font-weight: 600;
+                color: #fff;
+            }
+
+            .subtitle{
+                margin: auto;
+                font-size: 25px;
+                font-weight: 300;
+                color: #fff;
+                letter-spacing: 1.46em;
+            }
+
+            .body-1{
+                margin-top: 30em;
+            }
+
+            .body-2{
+                margin-top: 100em;
+            }
+
+            .body-3{
+                margin-top: 142em;
+            }
+
+            .body-4{
+                margin-top: 15vh;
+            }
+
+            .left-text{
+                list-style: none;
+                float: left;
+                margin-left: 15%;
+            }
+
+            .right-text{
+                list-style: none;
+                float: right;
+                margin-right: 15%;
+                margin-top: 25em;
+            }
+
+            .info-text{
+                text-align: center;
+                color: #fff;
+            }
+
+            .info-text h1{
+                font-size: 25px;
+                font-weight: 600;
+                letter-spacing: 0.27em;
+                font-variant: small-caps;
+            }
+
+            .info-text p{
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: 0.2em;
+            }
+
+            .Breacher-Brung-to-Light{
+                width: 550px;
+                height: 650px;
+                box-shadow: 0px 4px 0px 17px rgba(0, 0, 0, 0.2);
+            }
+
+            .Aftermath{
+                width: 800px;
+                height: 600px;
+                box-shadow: 0px 4px 0px 17px rgba(0, 0, 0, 0.2);
+            }
+
+            .second-text{
+                margin-top: 10em;
+            }
+
+            .second-image{
+                margin-top: -5em;
+            }
+
+
+            footer{
+                background-image: url("./images/Pumpkin.png") i !important;
+                height: 60em;
+            }
+
+            .fiverr-logo img{
+                width: 70px;
+                filter: brightness(0%);
+            }
+
+            .instagram-logo img{
+                width: 70px;
+            }
+
+            .transparent-logo{
+                width: 450px;
+                opacity: 50%;
+                margin-top: -20vh;
+            }
+
+            .footer-nav{
+                padding-top: 40vh;
+            }
+
+            .instagram-ul{
+                list-style: none;
+            }
+
+            .footer-nav h1{
+                color: #fff;
+                font-weight: 400;
+                font-size: 20px;
+                letter-spacing: 20%;
+            }
+
+            .email{
+                color: #fff;
+                text-align: center;
+                margin-top: 10vh;
+            }
+
+            .email h1{
+                font-weight: 400;
+                font-size: 20px;
+                letter-spacing: 20%;
+            }
+
+            .about-body{
+                text-align: center;
+                margin: 50vh 0px;
+            }
+
+            .about-title{
+                color: #fff;
+                font-weight: 600;
+                font-size: 30px;
+                letter-spacing: 27%;
+                text-decoration: underline;
+                font-variant: small-caps;
+            }
+
+            .about-subtitle{
+                color: #fff;
+                font-weight: 400;
+                font-size: 20px;
+                letter-spacing: 20%;
+            }
+
+            .contact-body{
+                text-align: center;
+                margin-top: 30vh;
+            }
+
+            .contact-subtitle{
+                font-weight: 400;
+                font-size: 15px;
+                letter-spacing: 3px;
+                color: #fff;
+                opacity: 50%;
+            }
+
+            .name-input{
+                width: 500px;
+                padding: 5px;
+                padding-left: 20px;
+                outline: none;
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 40px;
+            }
+            .name-input::placeholder{
+                color: rgba(0, 0, 0, 0.5);
+                font-variant: small-caps;
+                font-size: 15px;
+                font-weight: 300;
+                letter-spacing: 0.3em;
+            }
+            .name-input:focus{
+                color: #fff;
+                background: rgba(255, 255, 255, 0.3);
+            }
+
+            .message-input{
+                width: 500px;
+                height: 300px;
+                padding: 25px;
+                padding-left: 20px;
+                outline: none;
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 40px;
+            }
+            .message-input::placeholder{
+                color: rgba(0, 0, 0, 0.5);
+                font-variant: small-caps;
+                font-size: 15px;
+                font-weight: 300;
+                letter-spacing: 0.3em;
+            }
+            .message-input:focus{
+                color: #fff;
+                background: rgba(255, 255, 255, 0.3);
+            }
+
+            .form-wrapper{
+                margin-bottom: 30vh;
+            }
+
+            .send-input{
+                padding: 15px 50px;
+                outline: none;
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 40px;
+                font-size: 25px;
+                font-weight: 500;
+                font-variant: small-caps;
+                letter-spacing: 0.3em;
+            }
+            .send-input:hover{
+                background: rgba(255, 255, 255, 0.5);
+            }
+            .send-input:focus{
+                background: rgba(255, 255, 255, 0.7);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="index"></div>
+        <div id="about"></div>
+        <div id="contact"></div>
+
+        <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+
+        <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCXBO3on-sLrqih-g3td5KwywdQo-zwDIw",
+            authDomain: "clients-6b5a2.firebaseapp.com",
+            projectId: "clients-6b5a2",
+            storageBucket: "clients-6b5a2.appspot.com",
+            messagingSenderId: "972374365676",
+            appId: "1:972374365676:web:b1aeb5ef243faa3c465cc9"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        function writeData(){
+            firebase.database().ref(createUUID()).set({
+                name: document.getElementById("nameInput").value,
+                email: document.getElementById("emailInput").value,
+                subject: document.getElementById("subjectInput").value,
+                message: document.getElementById("messageInput").value
+            }).then(
+                alert("Message Sent")
+            );
+        }
+
+        function createUUID(){
+            var dt = new Date().getTime();
+            var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = (dt + Math.random()*16)%16 | 0;
+                dt = Math.floor(dt/16);
+                return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+            });
+            return uuid;
+        }
+        </script>
+        <script>
+            var indexHTML = `
+            <header>
+                <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center">
+                    <a href="javascript:indexPage()" class="navbar-brand mr-0 logo"><img src="./styles/images/Logo.jpg" alt=""></a>
+                    <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+                        <ul class="navbar-nav mx-auto text-center">
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="javascript:aboutPage()">about</span></a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <ul class="title-ul">
+                                    <li>
+                                        @leonardvariety
+                                    </li>
+                                    <li>
+                                        <div class="navbar-top-line"></div>
+                                    </li>
+                                    <li>
+                                        <div class="navbar-bottom-line"></div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="javascript:contactPage()">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    
+                <div class="wrapper">
+                    <h1 class="title">Leonard</h1>
+                    <p class="subtitle">DESIGN</p>
+                </div>
+            </header>
+    
+            <div class="body-1">
+                <ul>
+                    <li class="left-text">
+                        <img class="Breacher-Brung-to-Light" src="./styles/images/Breacher Brung to Light.jpg" alt="">
+                    </li>
+                    <li class="right-text info-text">
+                        <h1><span style="text-decoration: underline;">Breacher</span> Brung to <span style="color: #B0ECFF;">Light</span></h1>
+                        <p>The sunlight from a breach shines<br>
+                            through its attendants.</p>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="body-2">
+                <ul>
+                    <li class="left-text info-text second-text" style="margin-left: 10%;">
+                        <h1><span style="text-decoration: underline;">After<span style="color: #E3BAA9;">math</span></span></h1>
+                        <p>The world from the perspective of<br>
+                            a single miniature bulb.</p>
+                    </li>
+                    <li class="right-text second-image" style="margin-right: 10%;">
+                        <img class="Aftermath" src="./styles/images/Aftermath.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+    
+            <div style="text-align: center;" class="body-3">
+                <img style="max-width: 100%;" src="./styles/images/Portraits.png" alt="">
+            </div>
+    
+            <div style="text-align: center;" class="body-4">
+                <img style="max-width: 100%;" src="./styles/images/Banner.png" alt="">
+            </div>
+    
+            <footer>
+                <div class="footer-nav">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light" data-toggle="affix">
+                        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+                            <div class="collapse navbar-collapse text-center">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item px-5 instagram-logo">
+                                        <img src="./styles/images/Instagram Logo.png" alt="">
+                                    </li>
+                                    <li class="nav-item px-5">
+                                        <ul class="instagram-ul">
+                                            <li>
+                                                <h1>@leonardvariety&nbsp&nbsp</h1>
+                                            </li>
+                                            <li>
+                                                <h1>@leonard.designs</h1>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <img class="transparent-logo" src="./styles/images/Transparent Logo.png" alt="">
+                                    <li class="nav-item px-5">
+                                        <h1>@leocrypto</h1>
+                                    </li>
+                                    <li class="nav-item px-5 fiverr-logo">
+                                        <img src="./styles/images/Fiverr Logo.webp" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="email">
+                    <h1>itsleonard.official@gmail.com</h1>
+                </div>
+            </footer>
+            `;
+            var aboutHTML = `
+            <header>
+                <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center">
+                    <a href="javascript:indexPage()" class="navbar-brand mr-0 logo"><img src="./styles/images/Logo.jpg" alt=""></a>
+                    <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+                        <ul class="navbar-nav mx-auto text-center">
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="javascript:aboutPage()">about</span></a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <ul class="title-ul">
+                                    <li>
+                                        @leonardvariety
+                                    </li>
+                                    <li>
+                                        <div class="navbar-top-line"></div>
+                                    </li>
+                                    <li>
+                                        <div class="navbar-bottom-line"></div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="javascript:contactPage()">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    
+                <div class="wrapper">
+                    <h1 class="title">Leonard</h1>
+                    <p class="subtitle">ABOUT</p>
+                </div>
+            </header>
+    
+            <div class="about-body">
+                <div class="about-title">
+                    <h1>About me</h1>
+                </div>
+                <div class="about-subtitle">
+                    <p>Leonard Crypto is a graphic designer<br>
+                        and hobbyist in programming.<br>
+                        After being a computer enthusiast his entire<br>
+                        life, he decided to explore<br>
+                        the creative mind of his and started creating<br>
+                        astonishing scenes, abstract and good<br>
+                        looking banners.
+                    </p>
+                </div>
+            </div>
+    
+            <footer>
+                <div class="footer-nav">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light" data-toggle="affix">
+                        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+                            <div class="collapse navbar-collapse text-center">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item px-5 instagram-logo">
+                                        <img src="./styles/images/Instagram Logo.png" alt="">
+                                    </li>
+                                    <li class="nav-item px-5">
+                                        <ul class="instagram-ul">
+                                            <li>
+                                                <h1>@leonardvariety&nbsp&nbsp</h1>
+                                            </li>
+                                            <li>
+                                                <h1>@leonard.designs</h1>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <img class="transparent-logo" src="./styles/images/Transparent Logo.png" alt="">
+                                    <li class="nav-item px-5">
+                                        <h1>@leocrypto</h1>
+                                    </li>
+                                    <li class="nav-item px-5 fiverr-logo">
+                                        <img src="./styles/images/Fiverr Logo.webp" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="email">
+                    <h1>itsleonard.official@gmail.com</h1>
+                </div>
+            </footer>
+            `;
+            var contactHTML = `
+            <header>
+                <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center">
+                    <a href="javascript:indexPage()" class="navbar-brand mr-0 logo"><img src="./styles/images/Logo.jpg" alt=""></a>
+                    <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+                        <ul class="navbar-nav mx-auto text-center">
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="javascript:aboutPage()">about</span></a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <ul class="title-ul">
+                                    <li>
+                                        @leonardvariety
+                                    </li>
+                                    <li>
+                                        <div class="navbar-top-line"></div>
+                                    </li>
+                                    <li>
+                                        <div class="navbar-bottom-line"></div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="javascript:contactPage()">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    
+                <div class="wrapper">
+                    <h1 class="title">Leonard</h1>
+                    <p class="subtitle">CONTACT</p>
+                </div>
+            </header>
+    
+            <div class="contact-body">
+                <div class="about-title">
+                    <h1>Contact me</h1>
+                </div>
+                <div class="contact-subtitle">
+                    <p>itsleonard.official@gmail.com</p>
+                </div>
+                <div class="form-wrapper">
+                    <form action="javascript:writeData()">
+                        <div><input class="name-input" id="nameInput" type="text" placeholder="Name..." required></div>
+                        <br>
+                        <div><input class="name-input" id="emailInput" type="email" placeholder="Email..." required></div>
+                        <br>
+                        <div><input class="name-input" id="subjectInput" type="text" placeholder="Subject..." required></div>
+                        <br>
+                        <div><textarea class="message-input" id="messageInput" placeholder="Message..." required></textarea>
+                        <br>
+                        <input class="send-input" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+    
+            <footer>
+                <div class="footer-nav">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light" data-toggle="affix">
+                        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+                            <div class="collapse navbar-collapse text-center">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item px-5 instagram-logo">
+                                        <img src="./styles/images/Instagram Logo.png" alt="">
+                                    </li>
+                                    <li class="nav-item px-5">
+                                        <ul class="instagram-ul">
+                                            <li>
+                                                <h1>@leonardvariety&nbsp&nbsp</h1>
+                                            </li>
+                                            <li>
+                                                <h1>@leonard.designs</h1>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <img class="transparent-logo" src="./styles/images/Transparent Logo.png" alt="">
+                                    <li class="nav-item px-5">
+                                        <h1>@leocrypto</h1>
+                                    </li>
+                                    <li class="nav-item px-5 fiverr-logo">
+                                        <img src="./styles/images/Fiverr Logo.webp" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="email">
+                    <h1>itsleonard.official@gmail.com</h1>
+                </div>
+            </footer>
+            `;
+
+            indexPage();
+
+            function indexPage(){
+                document.getElementById("index").innerHTML = indexHTML;
+                document.getElementById("about").innerHTML = "";
+                document.getElementById("contact").innerHTML = "";
+            }
+            function aboutPage(){
+                document.getElementById("about").innerHTML = aboutHTML;
+                document.getElementById("index").innerHTML = "";
+                document.getElementById("contact").innerHTML = "";
+            }
+            function contactPage(){
+                document.getElementById("contact").innerHTML = contactHTML;
+                document.getElementById("about").innerHTML = "";
+                document.getElementById("index").innerHTML = "";
+            }
+        </script>
+    </body>
+</html>
